@@ -1,0 +1,139 @@
+/*Estilos panda*/
+.bodypanda{
+    background-image: url(../img/Frame\ 6.png);
+}
+.cajapanda{
+    width: 70rem;
+    height: 30rem;
+    margin: 10px auto;    
+}
+.cont1{
+    height: 100px;
+    align-items: center;
+    font-size: 80px;
+}
+.tcajap{
+    padding: 0px;
+    margin: 10px;
+    color: azure;
+    text-shadow: 3px 3px 3px var(--dark-color);
+}
+.cont2{
+    display: flex;
+    flex: row;
+
+    align-items:flex-start;
+    margin: auto 50px;
+}
+
+.galpanda{
+    width: 340px;
+    height:400px;
+    margin: 50px;
+    overflow: hidden;
+}
+
+.cont3{
+    width: 700px;
+}
+
+.funo, .fdos{
+    width: 250px;
+    text-align: center;
+    align-items: center;
+    float: left;
+    margin: 30px;
+}
+
+.funo img{
+    height: 300px;
+}
+
+.fdos img{
+    width: 300px;
+}
+
+.cont3:hover{
+    transform: translate(-300px);
+    transition: transform 1s ;
+}
+.parrcaja{
+    width: 550px;
+    text-align: justify;
+    font-family: 'Mulish';
+    font-size: 20px;
+    padding: 70px 10px;
+}
+/*Estilos polar*/
+.bodypolar{
+    background-image: url(../img/Frame\ 8.png);
+}
+
+.tcajapolar{
+    padding: 0px;
+    margin: 10px;
+    color: azure;
+    text-shadow: 3px 3px 3px var(--babyblue-color);
+}
+
+.parrcajapl{
+    width: 550px;
+    text-align: justify;
+    font-family: 'Mulish';
+    font-size: 20px;
+    padding: 90px 10px;
+}
+
+.funopl, .fdospl{
+    width: 250px;
+    text-align: center;
+    align-items: center;
+    float: left;
+    margin: 30px;
+}
+
+.funopl img{
+    width: 270px;
+}
+
+.fdospl img{
+    width: 250px;
+    padding: 10px;
+}
+
+/*Estilos pardo*/
+.bodypardo{
+    background-image: url(../img/Frame\ 7.png);
+}
+
+.tcajapardo{
+    padding: 0px;
+    margin: 10px;
+    color: azure;
+    text-shadow: 3px 
+    3px 3px var(--coffee-color);
+}
+
+.parrcajas{
+    width: 550px;
+    text-align: justify;
+    font-family: 'Mulish';
+    font-size: 20px;
+    padding: 90px 10px;
+}
+
+.funopo, .fdospo{
+    width: 250px;
+    text-align: center;
+    align-items: center;
+    float: left;
+    margin: 30px;
+}
+
+.funopo img{
+    width: 180px;
+}
+
+.fdospo img{
+    width: 180px;
+}

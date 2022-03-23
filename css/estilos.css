@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+:root{
+    --coffee-color:#B56A4B;
+    --babyblue-color:#BFE4FF;
+    --light-color: #F1DAF2;
+    --pink-color:#FFC0BF;
+    --lilac-color:#E1B1E0;
+    --dark-color: #191919;
+    --title-color:#CC6A90;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--light-color);
+    align-items: center;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Mulish' sans-serif;
+    font-weight: 600;
+    color: var(--coffee-color);
+    text-shadow: 1px 1px 1px var(--lilac-color);
+    margin: 3px;
+    padding: 10px;
+    text-align: justify;
+    font-size: 20px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+header img{
+    width: 80%;
+    margin: 15px auto;
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    margin: auto;
+}
+.bpro{
+    background-color:var(--title-color);
+    border-radius: 15px;
+    border-color: var(--title-color);
+    font-weight: bold;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+    border-style: solid;
+    box-shadow: 2px 2px 3px var(--dark-color);
+    font-size: 20px;
+    color: azure;
+    text-shadow: 2px 2px 2px var(--dark-color);
+    margin:5px;
+}
+
+.bcap{
+    background-color:var(--title-color);
+    border-radius: 15px;
+    border-color: var(--title-color);
+    font-weight: bold;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+    border-style: solid;
+    box-shadow: 2px 2px 3px var(--dark-color);
+    font-size: 20px;
+    color: azure;
+    text-shadow: 2px 2px 2px var(--dark-color);
+    margin:5px
+}
+.bcap a, .bpro a{
+    color: azure;
+}
+.personajes{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    text-align: center;
+    align-items: center;
+    padding: auto 10rem;
+    margin: 3px auto;    
+}
+
+.nombre{
+    font-size: 25px;
+    color:var(--title-color);
+    text-shadow: 3px 3px 3px white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.cajapersonaje{
+    background-color: var(--babyblue-color);
+    width: 62%;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 3px 3px 12px var(--dark-color);
+    align-items: center;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.cpanda{
+    background-color: var(--babyblue-color);
+    color: var(--dark-color);
+    font-family: 'Mulish' sans-serif;
+}
+
+.cajaper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fotounopd, .fotodospd{
+    width: 90%;
+    float: left;
+}
+
+.fotounopd img{
+    width: 300px;
+}
+
+.fotodospd img{
+    height: 320px;
+    margin-left: 50px ;
+}
+
+.cajaper:hover{
+    transform: translate(-290px);
+    transition: transform 1s ;
+}
+
+.fotounopl,.fotodospl{
+    width: 100%;
+    float: left;
+    margin: 30px;  
+}
+
+.fotounopl img{
+    height: 320px;
+    margin: 0 45px;
+}
+
+.fotodospl img{
+    height: 320px;    
+}
+
+.fotounopo, .fotodospo{
+    width: 100%;
+    float: left;
+    margin: 0 20px; 
+}
+
+.fotounopo img{
+    margin: 0 50px 0 30px;
+    height: 320px;
+}
+
+.fotodospo img{
+    height: 320px;
+}
+
+/*capitulos*/
+.lista{
+    width:50rem ;
+    margin: auto;
+    padding: 10px;
+}
+
+.lista li{
+    font-family: 'Mulish';
+    font-size: 30px;
+}
+
+.lista ul{
+    list-style-image:url(../img/pngwing.com\ \(1\)\ -\ copia.png)
+}
+
+.h2cap{
+    font-family: 'Mulish' sans-serif;
+    font-weight: 600;
+    color: var(--coffee-color);
+    text-shadow: 4px 4px 4px var(--lilac-color);
+    margin: 3px;
+    font-size: 40px;
+}
+
+.formu{
+    width: 90%;
+    margin: 10px auto;
+}
+
+.npt{
+    width: 20%;
+    height: 43px;
+    background-color:var(--pink-color);
+    box-sizing:border-box;
+    margin-top: 10px;
+}
+
+.lbl{
+    width: 70%;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16pt;
+    text-align: center;
+    padding: 5px 3px; 
+    font-size: 16pt;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+#boton2{
+    width: 128;
+    height: 34;
+    font-family: 'Mulish', sans-serif;
+    background-color: var(--pink-color);
+    border-radius: 9px;
+    color:var(--dark-color);
+    text-align: center;
+    cursor: pointer;
+    padding: 5px 35px ;
+    font-size: 20px;
+
+    } 
+
+.span{
+    font-weight: 400;
+    font-size:20px;
+    cursor: pointer;
+    text-decoration:none;
+}
+
+
+@media screen and (min-width:768px){
+    body{
+        background-color: aqua;
+    }
+    h2{
+        font-size: 25px;
+    }
+    
+    .botones{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .bpro{
+        padding: 1rem;
+    }
+
+    .bcap{
+        padding: 1rem 2rem;
+    }
+    
+    .cajapersonaje{
+        width: 50%;
+    }
+    
+    .fotounopd img{
+        width: 300px;
+        margin: auto 40px;
+    }
+    
+    .fotodospd img{
+        height: 320px;
+        margin-left: 60px;
+    }
+    
+    .cajaper:hover{
+        transform: translate(-330px);
+        transition: transform 1s ;
+    }
+    
+    .fotounopl,.fotodospl{
+        width: 100%;
+        float: left;
+        margin: 30px;  
+    }
+    
+    .fotounopl img{
+        height: 320px;
+        margin: 0 45px;
+    }
+    
+    .fotodospl img{
+        height: 320px;    
+    }
+    
+    .fotounopo, .fotodospo{
+        width: 100%;
+        float: left;
+        margin: 0 20px; 
+    }
+    
+    .fotounopo img{
+        margin: 0 50px 0 30px;
+        height: 320px;
+    }
+    
+    .fotodospo img{
+        height: 320px;
+    }
+    
+}
+
+
+@media screen and (min-width:1024px){
+    
+}
+
+@media screen and (min-width:1200px){
+ 
+}
