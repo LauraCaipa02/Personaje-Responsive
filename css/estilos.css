@@ -19,6 +19,7 @@ body{
     background-color: var(--light-color);
     align-items: center;
     text-align: center;
+    margin: 0;
 }
 
 h2{
@@ -26,37 +27,38 @@ h2{
     font-weight: 600;
     color: var(--coffee-color);
     text-shadow: 1px 1px 1px var(--lilac-color);
-    margin: 3px;
+    margin: 15px 15px 0;
     padding: 10px;
     text-align: justify;
     font-size: 20px;
 }
 
 header{
-    display: flex;
-    flex-direction: column;
     padding: 5px;
+    margin:20px 0;
 }
 
 header img{
     width: 80%;
-    margin: 15px auto;
+    margin: 10px auto 0;
 }
 
 footer{
     display: flex;
+    flex-direction:column;
     width: 100%;
     background-color: #cc6a905d;
     font-family: 'Mulish', sans-serif;
-    justify-content: center;
 }
 .botones{
     display: flex;
     flex-direction: column;
     width:40%;
-    margin: auto;
+    margin:auto;
+    justify-content: center;
     font-family: 'Mulish', sans-serif;
 }
+
 .bpro{
     background-color:var(--title-color);
     border-radius: 15px;
@@ -67,9 +69,8 @@ footer{
     border-style: solid;
     box-shadow: 2px 2px 3px var(--dark-color);
     font-size: 20px;
-    color: azure;
     text-shadow: 2px 2px 2px var(--dark-color);
-    margin:5px;
+    margin:5px 0 15px;
 }
 
 .bcap{
@@ -82,7 +83,6 @@ footer{
     border-style: solid;
     box-shadow: 2px 2px 3px var(--dark-color);
     font-size: 20px;
-    color: azure;
     text-shadow: 2px 2px 2px var(--dark-color);
     margin:5px;
 }
@@ -94,9 +94,8 @@ footer{
     flex-direction: column;
     justify-content:space-between;
     text-align: center;
-    align-items: center;
     padding: auto 10rem;
-    margin: 3px auto;    
+    margin: 30px auto;    
 }
 
 .nombre{
@@ -135,15 +134,16 @@ a{
 .fotounopd, .fotodospd{
     width: 90%;
     float: left;
+    margin: auto 15px;
 }
 
 .fotounopd img{
-    width: 300px;
+    width: 280px;
 }
 
 .fotodospd img{
-    height: 320px;
-    margin-left: 50px ;
+    height: 300px;
+    margin-left: 10px ;
 }
 
 .cajaper:hover{
@@ -154,27 +154,27 @@ a{
 .fotounopl,.fotodospl{
     width: 100%;
     float: left;
-    margin: 5px;  
+    margin-left: 50px;  
 }
 
 .fotounopl img{
-    width: 250px;
+    width:  150px;
     margin: 0 45px;
 }
 
 .fotodospl img{
-    width: 250px; 
-    margin-left: 0px;   
+    height: 250px; 
+    margin-left: 40px;   
 }
 
 .fotounopo, .fotodospo{
     width: 100%;
     float: left;
-    margin: 0 25px 0 15px; 
+    margin: 0 30px 0 15px; 
 }
 
 .fotounopo img{
-    margin: 0 55px ;
+    margin: 0 35px 0 55px ;
     height: 320px;
 }
 
@@ -184,18 +184,19 @@ a{
 
 /*capitulos*/
 .lista{
-    width:50rem ;
+    width:80%;
     margin: auto;
-    padding: 10px;
+    padding: 15px;
+    text-align: justify;
 }
 
 .lista li{
     font-family: 'Mulish';
-    font-size: 30px;
+    font-size: 18px;
 }
 
 .lista ul{
-    list-style-image:url(../img/pngwing.com\ \(1\)\ -\ copia.png)
+    list-style-image:url(../img/pngwing.com\ \(1\)\ -\ copia.png);
 }
 
 .h2cap{
@@ -204,7 +205,8 @@ a{
     color: var(--coffee-color);
     text-shadow: 4px 4px 4px var(--lilac-color);
     margin: 3px;
-    font-size: 40px;
+    font-size: 30px;
+    text-align: center;
 }
 
 .formu{
@@ -259,10 +261,7 @@ a{
         font-size: 25px;
     }
     
-    .botones{
-        flex-direction: row;
-        justify-content: center;
-    }
+    
     .bpro{
         padding: 1rem;
     }
@@ -276,11 +275,11 @@ a{
     }
     
     .fotounopd img{
-        margin: auto 30px;
+        margin: auto 20px;
     }
     
     .fotodospd img{
-        margin-left: 65px;
+        margin-left: 35px;
     }
     
     .cajaper:hover{
@@ -288,7 +287,7 @@ a{
     }
     
     .fotounopl,.fotodospl{
-        margin: 10px;  
+        margin: auto 50px;  
     }
     
     .fotounopl img{
@@ -311,9 +310,8 @@ a{
 @media screen and (min-width:1024px){
 
     .botones{
+        flex-direction: row;
         width:50%;
-        margin: auto;
-        font-family: 'Mulish', sans-serif;
     }
     .bpro, .bcap{         
         font-size: 25px;
@@ -332,11 +330,11 @@ a{
         width: 300px;
     }
     .fotounopd img{
-        margin: auto;
+        margin: 0;
     }
     
     .fotodospd img{
-        margin-left: 50px;
+        margin-left: 15px;
     }
     
     .cajaper:hover{
@@ -344,11 +342,11 @@ a{
     }
     
     .fotounopl,.fotodospl{
-        margin: 0 10px;  
+        margin: 0 50px;  
     }
     .fotounopl img{
-        height: 320px;
-        margin: 0 0 0 30px;
+        width: 170px;
+        margin: 0 0 0 20px;
     }
     
     .fotodospl img{
@@ -367,6 +365,77 @@ a{
         height: 290px;
         margin-left: 15px;
     }
+
+    /*capitulos*/
+.lista{
+    width:50rem ;
+    margin: auto;
+    padding: 10px;
+}
+
+.lista li{
+    font-family: 'Mulish';
+    font-size: 30px;
+}
+
+.lista ul{
+    list-style-image:url(../img/pngwing.com\ \(1\)\ -\ copia.png)
+}
+
+.h2cap{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 600;
+    color: var(--coffee-color);
+    text-shadow: 4px 4px 4px var(--lilac-color);
+    margin: 3px;
+    font-size: 40px;
+    
+}
+
+.formu{
+    width: 90%;
+    margin: 10px auto;
+}
+
+.npt{
+    width: 20%;
+    height: 43px;
+    background-color:var(--pink-color);
+    box-sizing:border-box;
+    margin-top: 10px;
+}
+
+.lbl{
+    width: 70%;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16pt;
+    text-align: center;
+    padding: 5px 3px; 
+    font-size: 16pt;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+#boton2{
+    width: 128;
+    height: 34;
+    font-family: 'Mulish', sans-serif;
+    background-color: var(--pink-color);
+    border-radius: 9px;
+    color:var(--dark-color);
+    text-align: center;
+    cursor: pointer;
+    padding: 5px 35px ;
+    font-size: 20px;
+
+    } 
+
+.span{
+    font-weight: 400;
+    font-size:20px;
+    cursor: pointer;
+    text-decoration:none;
+}
 }
 
 @media screen and (min-width:1200px){
