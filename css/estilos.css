@@ -184,19 +184,24 @@ a{
 
 /*capitulos*/
 .lista{
+    display: flex;
+    flex-direction: column;
     width:80%;
     margin: auto;
-    padding: 15px;
+    padding: 0 5px;
     text-align: justify;
 }
 
 .lista li{
     font-family: 'Mulish';
     font-size: 18px;
+    align-content: center;
+    margin: 5px 0;
 }
 
 .lista ul{
     list-style-image:url(../img/pngwing.com\ \(1\)\ -\ copia.png);
+    margin-top: 0;
 }
 
 .h2cap{
@@ -205,62 +210,86 @@ a{
     color: var(--coffee-color);
     text-shadow: 4px 4px 4px var(--lilac-color);
     margin: 3px;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
 }
-
+.ingreso{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 5px;
+}
 .formu{
-    width: 90%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
     margin: 10px auto;
+    align-items: center;
+    border-radius: 10px;
+    background: rgb(225,177,224);
+    background: linear-gradient(180deg, rgba(225,177,224,1) 0%, rgba(238,174,202,10.5) 52%, rgba(225,177,224,1) 100%);
 }
-
-.npt{
-    width: 20%;
+.add{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+}
+.add input{
+    width: 70%;
     height: 43px;
-    background-color:var(--pink-color);
-    box-sizing:border-box;
+    background: var(--light-color);
+    border: 1px solid var(--title-color);
     margin-top: 10px;
+    border-radius: 10px;
 }
 
-.lbl{
+.add label{
     width: 70%;
     font-family: 'Mulish', sans-serif;
     font-size: 16pt;
     text-align: center;
     padding: 5px 3px; 
     font-size: 16pt;
-    font-weight: 500;
+    font-weight: 600;
     margin-top: 15px;
+    color: var(--title-color);
+    text-shadow:2px 1px 2px var(--dark-color);
 }
 
 #boton2{
-    width: 128;
-    height: 34;
+    width: 30%;
     font-family: 'Mulish', sans-serif;
-    background-color: var(--pink-color);
+    background-color: #cc6a9085;
+    border: 2px solid var(--light-color);
     border-radius: 9px;
-    color:var(--dark-color);
     text-align: center;
     cursor: pointer;
-    padding: 5px 35px ;
+    padding: 5px ;
+    margin-bottom:15px ;
     font-size: 20px;
+    color: white;
+} 
 
-    } 
+#boton2:hover{
+    background: linear-gradient(180deg, rgba(225,177,224,1) 0%, rgba(238,174,202,10.5) 52%, rgba(225,177,224,1) 100%);
+    border: 2px solid var(--title-color);
+}
 
 .span{
     font-weight: 400;
     font-size:20px;
     cursor: pointer;
     text-decoration:none;
+    color: var(--title-color);
+    text-shadow:1px 1px 1px var(--dark-color);
 }
 
 
 @media screen and (min-width:768px){
-
     h2{
         font-size: 25px;
     }
-    
     
     .bpro{
         padding: 1rem;
@@ -305,10 +334,29 @@ a{
     .fotounopo img{
         margin: 0 40px;
     }
+    /*capitulos*/
+    .lista{
+        width:550px;
+    }
+
+    .lista li{
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .h2cap{
+        font-size: 30px;
+    }
+    .ingreso{
+        font-size: 30px;
+    }
+    
+    .formu{
+        width: 620px;
+    }
 }
 
 @media screen and (min-width:1024px){
-
     .botones{
         flex-direction: row;
         width:50%;
@@ -369,77 +417,41 @@ a{
     /*capitulos*/
 .lista{
     width:50rem ;
-    margin: auto;
-    padding: 10px;
 }
 
 .lista li{
-    font-family: 'Mulish';
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .lista ul{
-    list-style-image:url(../img/pngwing.com\ \(1\)\ -\ copia.png)
+    margin: auto;
 }
 
 .h2cap{
-    font-family: 'Mulish', sans-serif;
-    font-weight: 600;
-    color: var(--coffee-color);
-    text-shadow: 4px 4px 4px var(--lilac-color);
-    margin: 3px;
-    font-size: 40px;
-    
+    margin: auto;
+    font-size:30px;
+    font-weight: bolder;
 }
 
 .formu{
-    width: 90%;
+    width: 800px;
     margin: 10px auto;
 }
-
+.add{
+    width: 800px;
+    margin-top: 20px;
+}
 .npt{
-    width: 20%;
-    height: 43px;
-    background-color:var(--pink-color);
-    box-sizing:border-box;
-    margin-top: 10px;
+    width: 200px;
 }
 
 .lbl{
-    width: 70%;
-    font-family: 'Mulish', sans-serif;
-    font-size: 16pt;
-    text-align: center;
-    padding: 5px 3px; 
-    font-size: 16pt;
-    font-weight: 500;
-    margin-top: 15px;
-}
-
-#boton2{
-    width: 128;
-    height: 34;
-    font-family: 'Mulish', sans-serif;
-    background-color: var(--pink-color);
-    border-radius: 9px;
-    color:var(--dark-color);
-    text-align: center;
-    cursor: pointer;
-    padding: 5px 35px ;
-    font-size: 20px;
-
-    } 
-
-.span{
-    font-weight: 400;
-    font-size:20px;
-    cursor: pointer;
-    text-decoration:none;
+    width: 200px;
+    font-size: 20pt;
 }
 }
 
 @media screen and (min-width:1200px){
-
     .espacio{
         width: 90%;
         margin: 0 auto;
