@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
 
 :root{
     --coffee-color:#B56A4B;
@@ -22,7 +22,7 @@ body{
 }
 
 h2{
-    font-family: 'Mulish' sans-serif;
+    font-family: 'Mulish', sans-serif;
     font-weight: 600;
     color: var(--coffee-color);
     text-shadow: 1px 1px 1px var(--lilac-color);
@@ -31,6 +31,7 @@ h2{
     text-align: justify;
     font-size: 20px;
 }
+
 header{
     display: flex;
     flex-direction: column;
@@ -42,11 +43,19 @@ header img{
     margin: 15px auto;
 }
 
+footer{
+    display: flex;
+    width: 100%;
+    background-color: #cc6a905d;
+    font-family: 'Mulish', sans-serif;
+    justify-content: center;
+}
 .botones{
     display: flex;
     flex-direction: column;
     width:40%;
     margin: auto;
+    font-family: 'Mulish', sans-serif;
 }
 .bpro{
     background-color:var(--title-color);
@@ -75,7 +84,7 @@ header img{
     font-size: 20px;
     color: azure;
     text-shadow: 2px 2px 2px var(--dark-color);
-    margin:5px
+    margin:5px;
 }
 .bcap a, .bpro a{
     color: azure;
@@ -102,7 +111,7 @@ a{
 
 .cajapersonaje{
     background-color: var(--babyblue-color);
-    width: 62%;
+    width: 320px;
     margin: 20px auto;
     text-align: center;
     box-shadow: 3px 3px 12px var(--dark-color);
@@ -114,7 +123,7 @@ a{
 .cpanda{
     background-color: var(--babyblue-color);
     color: var(--dark-color);
-    font-family: 'Mulish' sans-serif;
+    font-family: 'Mulish', sans-serif;
 }
 
 .cajaper{
@@ -145,26 +154,27 @@ a{
 .fotounopl,.fotodospl{
     width: 100%;
     float: left;
-    margin: 30px;  
+    margin: 5px;  
 }
 
 .fotounopl img{
-    height: 320px;
+    width: 250px;
     margin: 0 45px;
 }
 
 .fotodospl img{
-    height: 320px;    
+    width: 250px; 
+    margin-left: 0px;   
 }
 
 .fotounopo, .fotodospo{
     width: 100%;
     float: left;
-    margin: 0 20px; 
+    margin: 0 25px 0 15px; 
 }
 
 .fotounopo img{
-    margin: 0 50px 0 30px;
+    margin: 0 55px ;
     height: 320px;
 }
 
@@ -189,7 +199,7 @@ a{
 }
 
 .h2cap{
-    font-family: 'Mulish' sans-serif;
+    font-family: 'Mulish', sans-serif;
     font-weight: 600;
     color: var(--coffee-color);
     text-shadow: 4px 4px 4px var(--lilac-color);
@@ -244,9 +254,7 @@ a{
 
 
 @media screen and (min-width:768px){
-    body{
-        background-color: aqua;
-    }
+
     h2{
         font-size: 25px;
     }
@@ -264,61 +272,107 @@ a{
     }
     
     .cajapersonaje{
-        width: 50%;
+        width: 350px;
     }
     
     .fotounopd img{
-        width: 300px;
-        margin: auto 40px;
+        margin: auto 30px;
     }
     
     .fotodospd img{
-        height: 320px;
-        margin-left: 60px;
+        margin-left: 65px;
     }
     
     .cajaper:hover{
         transform: translate(-330px);
-        transition: transform 1s ;
     }
     
     .fotounopl,.fotodospl{
-        width: 100%;
-        float: left;
-        margin: 30px;  
+        margin: 10px;  
     }
     
     .fotounopl img{
-        height: 320px;
-        margin: 0 45px;
+        margin: 0 60px;
     }
     
     .fotodospl img{
-        height: 320px;    
+        margin-left: 15px;    
     }
     
     .fotounopo, .fotodospo{
-        width: 100%;
-        float: left;
-        margin: 0 20px; 
+        margin: 0 40px; 
     }
     
     .fotounopo img{
-        margin: 0 50px 0 30px;
+        margin: 0 40px;
+    }
+}
+
+@media screen and (min-width:1024px){
+
+    .botones{
+        width:50%;
+        margin: auto;
+        font-family: 'Mulish', sans-serif;
+    }
+    .bpro, .bcap{         
+        font-size: 25px;
+        margin: 0 50px;
+    }
+    
+    .personajes{
+        flex-direction: row;
+    }
+    
+    .nombre{
+        font-size: 30px;
+    }
+    
+    .cajapersonaje{
+        width: 300px;
+    }
+    .fotounopd img{
+        margin: auto;
+    }
+    
+    .fotodospd img{
+        margin-left: 50px;
+    }
+    
+    .cajaper:hover{
+        transform: translate(-290px);
+    }
+    
+    .fotounopl,.fotodospl{
+        margin: 0 10px;  
+    }
+    .fotounopl img{
         height: 320px;
+        margin: 0 0 0 30px;
+    }
+    
+    .fotodospl img{
+        height: 320px;
+    }
+    
+    .fotounopo, .fotodospo{
+        margin:0 10px 0px;
+    } 
+    
+    .fotounopo img{
+        width: 200px;
     }
     
     .fotodospo img{
-        height: 320px;
+        height: 290px;
+        margin-left: 15px;
     }
-    
-}
-
-
-@media screen and (min-width:1024px){
-    
 }
 
 @media screen and (min-width:1200px){
- 
+
+    .espacio{
+        width: 90%;
+        margin: 0 auto;
+    }
 }
