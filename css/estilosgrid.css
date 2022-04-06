@@ -1,48 +1,88 @@
+:root{
+    --coffee-color:#B56A4B;
+    --babyblue-color:#BFE4FF;
+    --light-color: #F1DAF2;
+    --pink-color:#FFC0BF;
+    --lilac-color:#E1B1E0;
+    --dark-color: #191919;
+    --title-color:#CC6A90;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 /*Estilos panda*/
 .bodypanda{
-    background-image: url(../img/Frame\ 6.png);
+    background-color: var(--babyblue-color);
+    background-size: cover;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto;
 }
+header{
+    width: 90%;
+    margin: 10px auto;
+}
+
+header img{
+    width: 90%;
+    margin: 10px 20px;
+}
+
+footer{
+    padding: 20px 0;
+    width: 100%;
+    background-color: #cc6a905d;
+    font-family: 'Mulish', sans-serif;
+    text-align: center;
+}
+
 .cajapanda{
-    width: 70rem;
-    height: 30rem;
+    display: grid;
+    grid-template-rows: auto auto;
+    width: 100%;
     margin: 10px auto;    
 }
 .cont1{
-    height: 100px;
-    align-items: center;
-    font-size: 80px;
+    text-align: center;
+    margin: auto;
 }
 .tcajap{
-    padding: 0px;
     margin: 10px;
     color: azure;
     text-shadow: 3px 3px 3px var(--dark-color);
+    font-size: 5rem;
 }
 .cont2{
-    display: flex;
-    flex: row;
-
-    align-items:flex-start;
-    margin: auto 50px;
+    display: grid;   
+    grid-template-rows: auto auto;
+    margin: auto;
+    padding: 10px 5px;
 }
 
 .galpanda{
-    width: 340px;
-    height:400px;
-    margin: 50px;
-    overflow: hidden;
+    width: 100%;
+    height: 360px;
+    margin: auto;
+    display: grid;
+    justify-items: center;
+    align-items: center;
 }
 
 .cont3{
-    width: 700px;
+    display:grid;
+    width: 100%;
+    margin: auto 35px;
+    justify-items: center;
 }
 
 .funo, .fdos{
     width: 250px;
     text-align: center;
-    align-items: center;
-    float: left;
-    margin: 30px;
+    justify-items: center;
 }
 
 .funo img{
@@ -54,15 +94,15 @@
 }
 
 .cont3:hover{
-    transform: translate(-300px);
+    transform: translate(-40px);
     transition: transform 1s ;
 }
 .parrcaja{
-    width: 550px;
+    width: 100%;
     text-align: justify;
     font-family: 'Mulish';
     font-size: 20px;
-    padding: 70px 10px;
+    padding:10px 15px;
 }
 /*Estilos polar*/
 .bodypolar{
@@ -136,4 +176,24 @@
 
 .fdospo img{
     width: 180px;
+}
+
+
+@media screen and (min-width:768px){
+    header img{
+        width: 90%;
+        margin: 10px  0 0 35px;
+    }
+
+}
+
+@media screen and (min-width:1024px){
+
+}
+
+@media screen and (min-width:1200px){
+    .espacio{
+        width: 90%;
+        margin: 0 auto;
+    }
 }

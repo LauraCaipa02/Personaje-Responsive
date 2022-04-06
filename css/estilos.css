@@ -416,11 +416,11 @@ a{
 
     /*capitulos*/
 .lista{
-    width:50rem ;
+    width:50rem;
 }
 
 .lista li{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .lista ul{
@@ -428,17 +428,22 @@ a{
 }
 
 .h2cap{
-    margin: auto;
-    font-size:30px;
+    margin:10px  auto;
+    font-size:25px;
+    font-weight: bolder;
+}
+
+.ingreso{
+    font-size:25px;
     font-weight: bolder;
 }
 
 .formu{
-    width: 800px;
+    width: 60%;
     margin: 10px auto;
 }
 .add{
-    width: 800px;
+    width: 100%;
     margin-top: 20px;
 }
 .npt{
