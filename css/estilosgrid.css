@@ -106,22 +106,14 @@ footer{
 }
 /*Estilos polar*/
 .bodypolar{
-    background-image: url(../img/Frame\ 8.png);
+    background-color: var(--pink-color);
 }
 
 .tcajapolar{
-    padding: 0px;
     margin: 10px;
     color: azure;
     text-shadow: 3px 3px 3px var(--babyblue-color);
-}
-
-.parrcajapl{
-    width: 550px;
-    text-align: justify;
-    font-family: 'Mulish';
-    font-size: 20px;
-    padding: 90px 10px;
+    font-size: 5rem;
 }
 
 .funopl, .fdospl{
@@ -129,37 +121,39 @@ footer{
     text-align: center;
     align-items: center;
     float: left;
-    margin: 30px;
 }
 
-.funopl img{
-    width: 270px;
+.cont3p{
+    display:grid;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    width: 75%;
+    margin: auto 10px;
+    justify-items: center;
+}
+
+.cont3p:hover{
+    transform: translate(-390px);
+    transition: transform 1s ;
 }
 
 .fdospl img{
-    width: 250px;
-    padding: 10px;
+    padding-right: 20px;
+    margin-left: -20px;
 }
+
 
 /*Estilos pardo*/
 .bodypardo{
-    background-image: url(../img/Frame\ 7.png);
+    background-color: var(--lilac-color);
 }
 
 .tcajapardo{
-    padding: 0px;
     margin: 10px;
     color: azure;
     text-shadow: 3px 
     3px 3px var(--coffee-color);
-}
-
-.parrcajas{
-    width: 550px;
-    text-align: justify;
-    font-family: 'Mulish';
-    font-size: 20px;
-    padding: 90px 10px;
+    font-size: 5rem;
 }
 
 .funopo, .fdospo{
@@ -167,7 +161,6 @@ footer{
     text-align: center;
     align-items: center;
     float: left;
-    margin: 30px;
 }
 
 .funopo img{
@@ -177,7 +170,6 @@ footer{
 .fdospo img{
     width: 180px;
 }
-
 
 @media screen and (min-width:768px){
     header img{
@@ -242,6 +234,43 @@ footer{
     .fdos img{
         margin-left: 70px;
     }
+
+    .funopo img{
+        width: 180px;
+        margin-left: 10px;
+    }
+    
+    .fdospo img{
+        width: 180px;
+        margin-left: 85px;
+    }
+
+    .bodypardo{
+        background-image: url(../img/Frame\ 7.png);
+        background-size: 100%;
+    }
+
+    .bodypolar{
+        background-image: url(../img/Frame\ 8.png);
+        background-size: 100%;
+    }
+
+    .cont3p{
+        display:grid;
+        grid-template-columns: auto auto;
+        gap: 50px;
+        width: 80%;
+        margin: auto;
+    }
+    .cont3p:hover{
+        transform: translate(-340px);
+        transition: transform 1s ;
+    }
+
+    .fdospl img{
+        padding-right: 20px;
+        margin-left: -40px;
+    }
 }
 
 @media screen and (min-width:1200px){
@@ -259,5 +288,25 @@ footer{
 
     .fdos img{
         margin-left: 150px;
+    }
+
+    .funopo img{
+        margin-left: 100px;
+    }
+    
+    .fdospo img{
+        margin-left: 150px;
+    }
+
+    .funopl img{
+        margin-left: 150px;
+    }
+
+    .fdospl img{
+        margin-left: 15px;
+    }
+
+    .cont3p:hover{
+        transform: translate(-400px);
     }
 }
