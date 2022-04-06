@@ -35,7 +35,7 @@ header img{
 footer{
     padding: 20px 0;
     width: 100%;
-    background-color: #cc6a905d;
+    background-color: #C3B8D7;
     font-family: 'Mulish', sans-serif;
     text-align: center;
 }
@@ -86,14 +86,11 @@ footer{
     width: 250px;
     text-align: center;
     justify-items: center;
-}
-
-.funo img{
-    height: 300px;
+    float: left;
 }
 
 .fdos img{
-    width: 300px;
+    margin-left: 20px;
 }
 
 .cont3:hover{
@@ -187,23 +184,13 @@ footer{
         width: 90%;
         margin: 10px  0 0 35px;
     }
+    
     .galpanda{
-        width: 100%;
-        height: 360px;
-        margin: auto;
-        display: grid;
-        justify-items: center;
-        align-items: center;    
-        overflow: hidden;
+        width: 48%;
     }
     
-    .cont3{
-        display:grid;
-        grid-template-columns: auto auto;
-        gap: 50px;
-        width: 70%;
-        margin: auto 20px;
-        justify-items: center;
+    .parrcaja{
+        padding:10px 25px;
     }
 }
 
@@ -226,63 +213,51 @@ footer{
         width: 70%;
     }
     .tcajap{
-        color: azure;
-        text-shadow: 3px 3px 3px var(--dark-color);
-        font-size: 8rem;
+        font-size: 7rem;
     }
 
-    .cont2{ 
-        width: 70%;
-        grid-template-columns: auto auto;
-        margin: auto;
-        padding: 10px 5px;
-        gap:20px;
-    }
-
-
-    .parrcaja{
-        width: 100%;
-        text-align: justify;
-        align-items: center;
-        justify-items: center;
-        font-family: 'Mulish';
-        font-size: 20px;
-        padding:10px 15px;
+    .cont2{
+        grid-template-columns: auto auto auto;
+        width: 80%;
     }
     .galpanda{
-        width: 70%;
-        margin: 0;
-
+        width: 100%;
     }
     .cont3{
         display:grid;
         grid-template-columns: auto auto;
-        gap: 40px;
-        width: 40%;
-        justify-items: center;
+        gap: 50px;
+        width: 80%;
+        margin: auto;
     }
-
-    .funo, .fdos{
-        width: 100%;
-
-    }
-
     .cont3:hover{
-        transform: translate(-360px);
+        transform: translate(-340px);
         transition: transform 1s ;
     }
 
-    footer{
-        background-color: #dcb0f4;
+    .funo img{
+        margin-left: 30px;
     }
-    
-    
+
+    .fdos img{
+        margin-left: 70px;
+    }
 }
 
 @media screen and (min-width:1200px){
     .espacio{
         width: 90%;
-        margin: 0 auto;
+        margin: auto;
+    }
+    .cont2{
+        align-items: center;
     }
 
+    .funo img{
+        margin-left: 60px;
+    }
+
+    .fdos img{
+        margin-left: 150px;
+    }
 }
